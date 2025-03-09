@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: #ffe680;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 500px;
+      }
+      .form-container h1 {
+        text-align: center;
+        color: #ff9900;
+      }
+      .form-container p {
+        text-align: center;
+        margin: 0;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: flex;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: bold;
+      }
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-group .radio-group,
+      .form-group .checkbox-group {
+        display: flex;
+        gap: 10px;
+      }
+      .form-group .radio-group label,
+      .form-group .checkbox-group label {
+        margin: 0;
+      }
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ff9900;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #e68a00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Student Registration Form</h1>
+      <form>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Enter your last name" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Enter your e-mail" />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="form-group">
+          <label for="username">Set Username</label>
+          <input type="text" id="username" placeholder="Set Username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Set Password</label>
+          <input type="password" id="password" placeholder="Set password" />
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="gender" value="Male" /> Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="Female" /> Female</label
+            >
+            <label
+              ><input type="radio" name="gender" value="Others" /> Others</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="course">Course</label>
+          <select id="course">
+            <option value="">Course</option>
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
+            <option value="arts">Arts</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Interests</label>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="interests" value="sports" />
+              Sports</label
+            >
+            <label
+              ><input type="checkbox" name="interests" value="music" />
+              Music</label
+            >
+            <label
+              ><input type="checkbox" name="interests" value="reading" />
+              Reading</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="interests"
+                value="running"
+                disabled
+              />
+              Running</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
